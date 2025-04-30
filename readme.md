@@ -1,4 +1,4 @@
-# PCAP Analyzer (Alpha - Private Snapshot)
+# PCAP Analyzer (Alpha - Public Snapshot)
 
 A limited, early-stage snapshot of a PCAP (Packet Capture) analysis tool with foundational elements for task management and data inspection workflows.  
 This repository reflects initial structural and architectural decisions and is **not** designed for general use or installation. Major features and components are either omitted or stubbed.
