@@ -1,0 +1,99 @@
+.form-label {
+  @apply mb-2 block text-gray-700 font-medium select-none;
+}
+
+.form-input,
+.form-input-sm
+.form-textarea,
+.form-select {
+    @apply placeholder:text-gray-500 placeholder:opacity-100 p-2 leading-normal block w-full border border-gray-300 text-gray-700 bg-white font-sans rounded text-left appearance-none relative focus:border-indigo-400 focus-within:border-indigo-400 focus-within:ring focus:ring
+}
+
+.form-input-sm {
+    @apply p-0
+}
+
+.form-select {
+  @apply pr-6;
+  background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAQCAYAAAAMJL+VAAAABGdBTUEAALGPC/xhBQAAAQtJREFUOBG1lEEOgjAQRalbGj2OG9caOACn4ALGtfEuHACiazceR1PWOH/CNA3aMiTaBDpt/7zPdBKy7M/DCL9pGkvxxVp7KsvyJftL5rZt1865M+Ucq6pyyF3hNcI7Cuu+728QYn/JQA5yKaempxuZmQngOwEaYx55nu+1lQh8GIatMGi+01NwBcEmhxBqK4nAPZJ78K0KKFAJmR3oPp8+Iwgob0Oa6+TLoeCvRx+mTUYf/FVBGTPRwDkfLxnaSrRwcH0FWhNOmrkWYbE2XEicqgSa1J0LQ+aPCuQgZiLnwewbGuz5MGoAhcIkCQcjaTBjMgtXGURMVHC1wcQEy0J+Zlj8bKAnY1/UzDe2dbAVqfXn6wAAAABJRU5ErkJggg==');
+  background-size: 0.7rem;
+  background-repeat: no-repeat;
+  background-position: right 0.7rem center;
+  &::-ms-expand {
+    @apply opacity-0;
+  }
+}
+
+.form-input.error,
+.form-textarea.error,
+.form-select.error {
+  @apply border-red-500 focus:ring focus:ring-red-200;
+}
+
+.form-error {
+  @apply text-red-700 mt-2 text-sm;
+}
+td.disabled *,
+td.disabled
+{
+    opacity: 0.7;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    cursor: not-allowed;
+
+}
+td.disabled {
+    @apply bg-red-50
+}
+
+.form-table {
+    @apply min-w-full divide-y divide-gray-300;
+    .hide-mobile {
+        @apply hidden lg:table-cell;
+    }
+    thead {
+        tr {
+            @apply font-bold hidden lg:table-row;
+        }
+
+        th {
+            @apply py-3 px-3 text-left text-sm font-semibold text-gray-900;
+        }
+    }
+    tbody {
+        @apply divide-y divide-gray-200;
+        tr {
+            @apply hover:bg-gray-100 border border-gray-200 lg:border-0;
+        }
+        td {
+            @apply px-3 py-3 text-sm font-medium;
+        }
+
+        dl {
+            dd {
+                @apply text-sm font-medium text-gray-500 mb-4;
+            }
+            dt {
+                @apply mt-1 text-sm text-gray-900 sm:mt-0 sm:col-span-2 ;
+            }
+        }
+    }
+}
+
+
+@layer utilities {
+    label.checkbox {
+        @apply text-gray-700 text-sm font-medium flex items-center;
+    }
+
+    label.checkbox > input[type='checkbox'], label.checkbox > input[type='radio'] {
+        @apply rounded w-8 h-8;
+        & + span {
+            @apply ml-2;
+        }
+    }
+}

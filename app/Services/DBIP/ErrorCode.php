@@ -1,0 +1,14 @@
+<?php
+
+namespace App\Services\DBIP;
+
+abstract class ErrorCode {
+    const INVALID_KEY = "INVALID_KEY",
+        INVALID_ADDRESS = "INVALID_ADDRESS",
+        HTTPS_NOT_ALLOWED = "HTTPS_NOT_ALLOWED",
+        TEMPORARY_BLOCKED = "TEMPORARY_BLOCKED",
+        TOO_MANY_ADDRESSES = "TOO_MANY_ADDRESSES",
+        OVER_QUERY_LIMIT = "OVER_QUERY_LIMIT",
+        EXPIRED = "EXPIRED",
+        UNAVAILABLE = "UNAVAILABLE";
+}

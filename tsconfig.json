@@ -1,0 +1,28 @@
+{
+    "compilerOptions": {
+        "target": "esnext",
+        "module": "commonjs",
+        "importHelpers": true,
+        "strict": false,
+        "sourceMap": true,
+        "allowJs": true,
+        "allowSyntheticDefaultImports": true,
+        "noImplicitAny": false,
+        "typeRoots": [
+            "node_modules/@types",
+            "resources/js/types",
+        ],
+        "baseUrl": ".",
+        "paths": {
+            "@/*": ["resources/js/*"],
+            "ziggy/*": ["vendor/tightenco/ziggy/dist/*"]
+        }
+    },
+    "include": [
+        "resources/js/shims-vue.d.ts",
+        "resources/js/types/*.d.ts"
+    ],
+    "exclude": [
+        "node_modules"
+    ]
+}
